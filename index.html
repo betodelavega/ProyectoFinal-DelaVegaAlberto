@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Saldo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="alertBox" style="display: none;"></div>
+    <div id="balanceDisplay"></div>
+    <button id="showBalanceBtn">Mostrar Saldo</button>
+    <form id="transferMoneyForm">
+      <input type="number" id="transferAmount" placeholder="Cantidad a transferir">
+      <button type="submit">Transferir</button>
+    </form>
+    <form id="addMoneyForm">
+      <input type="number" id="addAmount" placeholder="Cantidad a agregar">
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
