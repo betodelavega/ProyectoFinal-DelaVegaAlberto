@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            background-image: url('../img/image.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    
+    <form id="registerForm">
+        <img src="../img/logosolo.png" alt="Logo" style="display: block; margin: 0 auto 20px auto; max-width: 150px;border: radius 30px;">
+        <h2>Register</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <button type="button" id="togglePassword">Mostrar contraseña</button>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" placeholder="Enter DNI">
+        <button type="submit" id="registerButton">Registrar</button>
+        <button type="button" id="backButton">Volver al inicio</button> 
+    </form>
+
+    </div>
+    
+    <script type="module" src="../scripts/register.js"></script>
+    <script>
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = '../index.html'; // Redirigir a la página de inicio
+        });
+    </script>
+</body>
+</html>

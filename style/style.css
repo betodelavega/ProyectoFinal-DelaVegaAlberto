@@ -1,0 +1,140 @@
+/* Importar Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px
+}
+
+#app, #registerForm, #loginForm {
+    background: rgba(255, 255, 255, 0.712);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(177, 170, 170, 0.075);
+    padding: 20px;
+    margin: 50px auto;
+}
+
+#app {
+    max-width: 600px;
+}
+
+#registerForm {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+#loginForm {
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.5) /* Fondo blanco con 80% de opacidad */
+}
+
+h1, #registerForm h2, #loginForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.converter, #registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label, #registerForm label, #loginForm label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select, button, #registerForm input, #registerForm button, #loginForm input, #loginForm button {
+    padding: 10px;
+    border: 1px solid #8b8b8b79;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button, #registerForm button, #loginForm button {
+    background-color: #03030318;
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, #registerForm button:hover, #loginForm button:hover {
+    background-color: #00000000;
+}
+
+#loginForm button {
+    background-color: #00000000;
+}
+
+#loginForm button:hover {
+    background-color: #00000000;
+}
+
+.output {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#log {
+    margin-top: 20px;
+    background: #ffffff36;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#log h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#logList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#logList li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

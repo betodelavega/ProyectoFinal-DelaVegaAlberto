@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión de Saldo</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            background-image: url('./img/image.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div id="alertBox" style="display: none;"></div>
-    <div id="balanceDisplay"></div>
-    <button id="showBalanceBtn">Mostrar Saldo</button>
-    <form id="transferMoneyForm">
-      <input type="number" id="transferAmount" placeholder="Cantidad a transferir">
-      <button type="submit">Transferir</button>
-    </form>
-    <form id="addMoneyForm">
-      <input type="number" id="addAmount" placeholder="Cantidad a agregar">
-      <button type="submit">Agregar</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <button type="button" id="togglePassword">Mostrar contraseña</button>
+        <button id="loginButton">Login</button>
+        <button id="registerButton">Register</button>
+    </div>
+    
+
+    <script type="module"  src="./scripts/login.js"></script>
+    <script>
+        document.getElementById('registerButton').addEventListener('click', () => {
+            window.location.href = './pages/register.html';
+        });
+
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            localStorage.clear();
+            window.location.href = './index.html';
+        });
+    </script>
 </body>
 </html>
